@@ -1,0 +1,149 @@
+.posts {
+
+    padding: 100px 0;
+
+    .container {
+        padding-left: 134px;
+        border-bottom: 1px solid rgba($white, .5);
+
+        @media screen and (max-width: 1200px) {
+            padding-left: 16px;
+        }
+    }
+
+    @media screen and (max-width: 767px) {
+        padding: 40px 0;
+    }
+
+    position: relative;
+
+    &__bg {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 65%;
+        z-index: -1;
+
+        img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+
+        &:before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 30%;
+            background: none;
+            background: linear-gradient(0deg, rgba(40,39,42,0) 0%, rgba(40,39,42,1) 100%);
+        }
+
+        &:after {
+            content: '';
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            width: 100%;
+            height: 30%;
+            background: none;
+            background: linear-gradient(0deg, rgba(40,39,42,1) 0%, rgba(40,39,42,0) 100%);
+        }
+    }
+
+    &__title {
+        margin-bottom: 40px;
+        font-size: rem(64);
+    }
+
+    &__desc {
+        font-size: rem(15);
+        max-width: 400px;
+        font-weight: bold;
+    }
+
+    &__list {
+        margin-top: 30px;
+    }
+
+    &__item {
+        display: flex;
+        padding: 60px 0;
+        border-bottom: 1px solid rgba($white, .5);
+
+        &:last-child {
+            border-bottom: none;
+        }
+
+        @media screen and (max-width: 767px) {
+            flex-direction: column-reverse;
+        }
+    }
+
+    &__item-aside {
+        padding-right: 200px;
+
+        @media screen and (max-width: 991px) {
+            padding-right: 60px;
+        }
+
+        @media screen and (max-width: 767px) {
+            padding: 0;
+        }
+    }
+
+    &__item-title {
+        a {
+            color: $white;
+            transition: all .25s;
+            font-weight: bold;
+            font-size: rem(26);
+
+            &:hover {
+                color: $mustard;
+            }
+        }
+    }
+
+    &__item-subtitle {
+        font-size: rem(22);
+        font-weight: bold;
+        opacity: 0.5;
+        margin-bottom: 30px;
+    }
+
+    &__text {
+        font-size: rem(15);
+        margin-bottom: 70px;
+
+        p {
+            margin-bottom: 25px;
+        }
+    }
+
+    &__item-img {
+        width: 270px;
+        height: 270px;
+        flex-shrink: 0;
+        overflow: hidden;
+
+        img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            transition: all 0.5s;
+
+            &:hover {
+                transform: scale(1.1) rotate(1deg);
+            }
+        }
+
+        @media screen and (max-width: 767px) {
+            width: 100%;
+            margin-bottom: 35px;
+        }
+    }
+}

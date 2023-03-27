@@ -1,0 +1,167 @@
+.header {
+	position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 3;
+    width: 100%;
+	padding: 30px 0;
+
+	@media screen and (max-width: 767px) {
+		padding: 24px 0;
+	}
+
+	&__aside {
+		position: absolute;
+		top: 0;
+		left: 0;
+		height: 100vh;
+		width: 270px;
+		background-color: rgba($jaguar, .7);
+		transition: transform .25s ease-in-out;
+
+		@media screen and (max-width: 1200px) {
+			width: 220px;
+		}
+
+		@media screen and (max-width: 767px) {
+			transform: translateX(-100%);
+			background-color: $jaguar;
+			z-index: 2;
+		}
+
+		&.active {
+			transform: translateX(0);
+		}
+	}
+
+	&__nav {
+		padding-left: 50px;
+		padding-top: 75px;
+
+		@media screen and (max-width: 1200px) {
+			padding-left: 30px;
+		}
+	}
+
+	&__nav-item {
+		margin-bottom: 40px;
+	}
+
+	&__nav-link {
+		color: $white;
+		opacity: .5;
+		font-size: rem(18);
+		font-weight: bold;
+		transition: all .25s;
+		width: 100%;
+		display: flex;
+		align-items: center;
+
+		&:hover,
+		&.active {
+			opacity: 1;
+
+			&:after {
+				transform: translateX(0);
+			}
+		}
+
+		&:after {
+			content: '';
+			height: 1px;
+			background-color: $white;
+			flex: 1;
+			margin-left: 60px;
+			transition: transform .25s;
+			transform: translateX(100%);
+
+			@media screen and (max-width: 1200px) {
+				margin-left: 25px;
+			}
+		}
+
+		@media screen and (max-width: 767px) {
+			font-size: rem(22);
+		}
+	}
+
+	&__logo {
+		background-color: $mustard;
+		padding: 30px 50px;
+		width: calc(100% + 90px);
+		position: relative;
+
+		@media screen and (max-width: 1200px) {
+			width: calc(100% + 60px);
+			padding: 15px 30px;
+		}
+		
+		a {
+			font-weight: bold;
+			color: $jaguar;
+			font-size: rem(32);
+		}
+	}
+
+	&__profile {
+		display: flex;
+    	justify-content: flex-end;
+	}
+
+	&__profile-item {
+		padding: 0 50px;
+		position: relative;
+
+		&:after {
+			content: '|';
+			position: absolute;
+			right: 0;
+			font-weight: 300;
+		}
+
+		&:last-child {
+			
+			&:after {
+				content: none;
+			}
+		}
+
+		@media screen and (max-width: 767px) {
+			padding: 0 15px;
+
+			&:last-child {
+				padding-right: 45px;
+			}
+		}
+	}
+
+	&__profile-link {
+		font-weight: bold;
+		color: $white;
+		font-size: rem(16);
+		border-bottom: 1px solid transparent;
+		transition: all .25s;
+
+		&:hover {
+			border-bottom-color: $white;
+		}
+	}
+
+	&__profile-img {
+		display: inline-block;
+		width: 30px;
+		height: 30px;
+		background-color: black;
+		border-radius: 50%;
+		overflow: hidden;
+		position: absolute;
+		top: 50%;
+		right: 0;
+		transform: translateY(-50%);
+	}
+}
+
+.logo {
+	max-width: 60px;
+	margin-right: 40px;
+}

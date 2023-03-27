@@ -1,0 +1,20 @@
+@import "fonts";
+@import "variables";
+
+//lib
+@import "../../node_modules/scss-reset/reset";
+// @import "../../node_modules/bootstrap-4-grid/css/grid.min.css";
+
+@import "base_elements";
+@import "page_layouts";
+@import "header";
+@import "hero_section";
+@import "spots_section";
+@import "above_section";
+@import "pick_section";
+@import "posts_section";
+@import "subscribe_section";
+
+@import "footer";
+
+

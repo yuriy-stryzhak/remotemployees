@@ -1,0 +1,493 @@
+<!DOCTYPE html>
+<html lang="zxx">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Test page layout</title>
+  <link rel="icon" type="image/x-icon" href="images/favicon.ico">
+  <meta name="description" content="Test page layout">
+</head>
+
+<body>
+
+  <div class="preloader"></div>
+
+  <div class="mainer">
+
+    <header class="header">
+      <aside class="header__aside js-menu">
+
+        <div class="header__logo">
+          <a href="#">trppd _</a>
+          
+          <div class='hamburger'>
+            <div class='hamburger-line1'></div>
+            <div class='hamburger-line2'></div>
+          </div>
+        </div>
+
+        <nav class="header__nav">
+          <ul>
+            <li class="header__nav-item"><a class="header__nav-link active" href="#">Home</a></li>
+            <li class="header__nav-item"><a class="header__nav-link" href="#">Recommendation</a></li>
+            <li class="header__nav-item"><a class="header__nav-link" href="#">Explore</a></li>
+            <li class="header__nav-item"><a class="header__nav-link" href="#">Help</a></li>
+            <li class="header__nav-item"><a class="header__nav-link" href="#">About Us</a></li>
+          </ul>
+        </nav>
+      </aside>
+
+      <div class="container">
+          <ul class="header__profile">
+            <li class="header__profile-item">
+              <a class="header__profile-link" href="#">My Collection</a>
+            </li>
+            <li class="header__profile-item">
+              <a class="header__profile-link" href="#">Galih Pambudi</a>
+              <span class="header__profile-img"></span>
+            </li>
+          </ul>
+      </div>
+
+    </header>
+
+    <main class="main">
+
+      <section class="hero">
+        <div class="swiper js-hero-slider">
+          <div class="swiper-wrapper">
+    
+            <div class="swiper-slide">
+              <img src="images/hero-slide-1.jpg" alt="slide">
+            </div>
+            <div class="swiper-slide">
+              <img src="images/hero-slide-2.jpg" alt="slide">
+            </div>
+            <div class="swiper-slide">
+              <img src="images/hero-slide-3.jpg" alt="slide">
+            </div>
+    
+          </div>
+        </div>
+
+        <div class="hero__about">
+          <div class="container">
+
+            <div class="hero__about-wrapper">
+              <h1 class="hero__title" data-aos="fade-up" data-aos-duration="1000">The Walchen <br> Lake</h1>
+              <div class="hero__description" data-aos="fade-up" data-aos-delay="500" data-aos-duration="1000">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Officia, corrupti sapiente? Ipsam, qui quam a totam ut eligendi commodi porro!</div>
+              <a class="button" href="#" data-aos="fade-up" data-aos-delay="1000" data-aos-duration="1000">Read More</a>
+
+              <div class="hero__control">
+
+                <button class="swiper-button-prev">
+                  <img src="images/arrow.svg" alt="<">
+                </button>
+                <button class="swiper-button-next">
+                  <img src="images/arrow.svg" alt=">">
+                </button>
+
+                <div class="hero__control-text">Outdoors Edition</div>
+
+                <div class="swiper-scrollbar js-hero-scrollbar"></div>
+
+                <div class="swiper-counter js-hero-counter"></div>
+
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </section>
+
+      <section class="spots">
+        <div class="container">
+          <div class="spots__wrapper">
+            <div class="spots__about" data-aos="fade-up" data-aos-duration="1000">
+              <h4 class="h4-title">Featured Spots</h4>
+              <div class="spots__about-desc">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Adipisci ipsum fugiat harum!</div>
+              <a href="#" class="spots__about-link">View All</a>
+            </div>
+            <div class="spots__slider" data-aos="fade-up" data-aos-delay="500" data-aos-duration="1000">
+
+              <div class="swiper js-spots-slider">
+                <div class="swiper-wrapper">
+          
+                  <div class="swiper-slide">
+                    <div class="spots__slider-img">
+                      <a href="#">
+                        <img src="images/spots-slider-1.jpg" alt="slider_img">
+                      </a>
+                    </div>
+                    <div class="spots__slider-title">
+                      <a href="#">Ollantaytambo</a>
+                    </div>
+                    <div class="spots__slider-subtitle">Peru</div>
+                    <div class="spots__slider-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quod, iste? Distinctio itaque reiciendis qui vitae maiores saepe minima delectus. Magnam.</div>
+                    <a href="#" class="spots__slider-link">read more</a>
+                  </div>
+
+                  <div class="swiper-slide">
+                    <div class="spots__slider-img">
+                      <a href="#">
+                        <img src="images/spots-slider-2.jpg" alt="slider_img">
+                      </a>
+                    </div>
+                    <div class="spots__slider-title">
+                      <a href="#">Antelope Canyon</a>
+                    </div>
+                    <div class="spots__slider-subtitle">USA</div>
+                    <div class="spots__slider-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quod, iste? Distinctio itaque reiciendis qui vitae maiores saepe minima delectus. Magnam.</div>
+                    <a href="#" class="spots__slider-link">read more</a>
+                  </div>
+
+                  <div class="swiper-slide">
+                    <div class="spots__slider-img">
+                      <a href="#">
+                        <img src="images/spots-slider-3.jpg" alt="slider_img">
+                      </a>
+                    </div>
+                    <div class="spots__slider-title">
+                      <a href="#">Lake Louise</a>
+                    </div>
+                    <div class="spots__slider-subtitle">Canada</div>
+                    <div class="spots__slider-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quod, iste? Distinctio itaque reiciendis qui vitae maiores saepe minima delectus. Magnam.</div>
+                    <a href="#" class="spots__slider-link">read more</a>
+                  </div>
+
+                  <div class="swiper-slide">
+                    <div class="spots__slider-img">
+                      <a href="#">
+                        <img src="images/spots-slider-4.jpg" alt="slider_img">
+                      </a>
+                    </div>
+                    <div class="spots__slider-title">
+                      <a href="#">Ollantaytambo</a>
+                    </div>
+                    <div class="spots__slider-subtitle">Peru</div>
+                    <div class="spots__slider-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quod, iste? Distinctio itaque reiciendis qui vitae maiores saepe minima delectus. Magnam.</div>
+                    <a href="#" class="spots__slider-link">read more</a>
+                  </div>
+
+                  <div class="swiper-slide">
+                    <div class="spots__slider-img">
+                      <a href="#">
+                        <img src="images/spots-slider-5.jpg" alt="slider_img">
+                      </a>
+                    </div>
+                    <div class="spots__slider-title">
+                      <a href="#">Antelope Canyon</a>
+                    </div>
+                    <div class="spots__slider-subtitle">USA</div>
+                    <div class="spots__slider-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quod, iste? Distinctio itaque reiciendis qui vitae maiores saepe minima delectus. Magnam.</div>
+                    <a href="#" class="spots__slider-link">read more</a>
+                  </div>
+
+                  <div class="swiper-slide">
+                    <div class="spots__slider-img">
+                      <a href="#">
+                        <img src="images/spots-slider-3.jpg" alt="slider_img">
+                      </a>
+                    </div>
+                    <div class="spots__slider-title">
+                      <a href="#">Lake Louise</a>
+                    </div>
+                    <div class="spots__slider-subtitle">Canada</div>
+                    <div class="spots__slider-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quod, iste? Distinctio itaque reiciendis qui vitae maiores saepe minima delectus. Magnam.</div>
+                    <a href="#" class="spots__slider-link">read more</a>
+                  </div>
+          
+                </div>
+              </div>
+
+              <div class="spots__control">
+
+                <div class="spots__control-text">Outdoors Edition</div>
+
+                <div class="swiper-scrollbar js-spots-scrollbar"></div>
+
+                <div class="swiper-counter js-spots-counter"></div>
+
+              </div>
+
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="above">
+        <div class="above__wrapper">
+          <div class="above__image">
+            <img class="parallax-image" data-height="600px" src="images/above-img.jpg" alt="image">
+          </div>
+
+          <div class="above__text" data-aos="fade-up" data-aos-duration="1000">
+            <h3 class="above__title">
+              Above <br> The Sea
+            </h3>
+            <blockquote class="above__quote">
+              Lorem ipsum, dolor sit amet consectetur adipisicing elit. Blanditiis, enim.
+            </blockquote>
+            <div class="above__desc">
+              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsam repellendus numquam sed sit, dolor veniam exercitationem corrupti nemo quasi maxime aliquid consectetur nostrum id dignissimos fugiat voluptate provident nesciunt ducimus?</p>
+              <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ad laudantium saepe quos quo laborum odio molestias pariatur illo ipsa hic, animi rerum sed vel sint recusandae, blanditiis, consectetur sapiente veritatis omnis! Pariatur minus, ea animi reiciendis porro quasi nemo repudiandae et ad culpa quisquam vero, enim eos tenetur necessitatibus accusamus?</p>
+            </div>
+            <a class="button" href="#">Read More</a>
+          </div>
+
+        </div>
+      </section>
+
+      <section class="pick">
+        <div class="container">
+
+          <div class="pick__wrapper">
+
+            <div class="pick__about" data-aos="fade-up" data-aos-duration="1000">
+              <h4 class="h4-title">Editor's <br> Pick</h4>
+              <div class="pick__about-desc">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Adipisci harum!</div>
+            </div>
+
+            <div class="pick__slider" data-aos="fade-up" data-aos-delay="500" data-aos-duration="1000">
+
+              <div class="pick__control">
+
+                <button class="swiper-button-prev">
+                  <img src="images/arrow.svg" alt="<">
+                </button>
+                <button class="swiper-button-next">
+                  <img src="images/arrow.svg" alt=">">
+                </button>
+
+                <div class="swiper-scrollbar js-pick-scrollbar"></div>
+
+                <div class="swiper-counter js-pick-counter"></div>
+
+                <button class="pick__sort js-sort">sort by</button>
+
+              </div>
+
+              <div class="swiper js-pick-slider">
+                <div class="swiper-wrapper">
+          
+                  <div class="swiper-slide">
+
+                    <div class="grid pick__grid js-pick-slide">
+                      <div class="grid-sizer"></div>
+                      <div class="gutter-sizer"></div>
+                      
+                      <div class="grid-item grid-item--width2 grid-item--height2">
+                        <img src="images/iso-1.jpg" alt="image">
+                        <div class="grid-item__desc">
+                          <div class="grid-item__title">
+                            <a href="#">Flatiron</a>
+                          </div>
+                          <div class="grid-item__subtitle">USA</div>
+                          <div class="grid-item__text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quod, iste? Distinctio itaque reiciendis qui vitae maiores saepe minima delectus. Magnam.</div>
+                        </div>
+                      </div>
+                      <div class="grid-item">
+                        <img src="images/iso-2.jpg" alt="image">
+                      </div>
+                      <div class="grid-item">
+                        <img src="images/iso-3.jpg" alt="image">
+                      </div>
+                      <div class="grid-item">
+                        <img src="images/iso-4.jpg" alt="image">
+                      </div>
+                      <div class="grid-item grid-item--width2">
+                        <img src="images/iso-5.jpg" alt="image">
+                      </div>
+                      
+                    </div>
+                  </div>
+
+                  <div class="swiper-slide">
+                    <div class="grid pick__grid js-pick-slide">
+                      
+                      <div class="grid-sizer"></div>
+                      <div class="gutter-sizer"></div>
+
+                      <div class="grid-item grid-item--width2">
+                        <img src="images/iso-1.jpg" alt="image">
+                        <div class="grid-item__desc">
+                          <div class="grid-item__title">
+                            <a href="#">Flatiron</a>
+                          </div>
+                          <div class="grid-item__subtitle">USA</div>
+                          <div class="grid-item__text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quod, iste? Distinctio itaque reiciendis qui vitae maiores saepe minima delectus. Magnam.</div>
+                        </div>
+                      </div>
+                      <div class="grid-item ">
+                        <img src="images/iso-2.jpg" alt="image">
+                      </div>
+                      <div class="grid-item grid-item--width2 grid-item--height2">
+                        <img src="images/iso-3.jpg" alt="image">
+                      </div>
+                      <div class="grid-item">
+                        <img src="images/iso-4.jpg" alt="image">
+                      </div>
+                      <div class="grid-item">
+                        <img src="images/iso-5.jpg" alt="image">
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="swiper-slide">
+                    <div class="grid pick__grid js-pick-slide">
+
+                      <div class="grid-sizer"></div>
+                      <div class="gutter-sizer"></div>
+                      
+                      <div class="grid-item grid-item--width2 grid-item--height2">
+                        <img src="images/iso-1.jpg" alt="image">
+                        <div class="grid-item__desc">
+                          <div class="grid-item__title">
+                            <a href="#">Flatiron</a>
+                          </div>
+                          <div class="grid-item__subtitle">USA</div>
+                          <div class="grid-item__text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quod, iste? Distinctio itaque reiciendis qui vitae maiores saepe minima delectus. Magnam.</div>
+                        </div>
+                      </div>
+                      <div class="grid-item">
+                        <img src="images/iso-2.jpg" alt="image">
+                      </div>
+                      <div class="grid-item">
+                        <img src="images/iso-3.jpg" alt="image">
+                      </div>
+                      <div class="grid-item">
+                        <img src="images/iso-4.jpg" alt="image">
+                      </div>
+                      <div class="grid-item grid-item--width2">
+                        <img src="images/iso-5.jpg" alt="image">
+                      </div>
+                    </div>
+                  </div>
+          
+                </div>
+              </div>
+
+            </div>
+
+          </div>
+
+        </div>
+      </section>
+
+      <section class="posts">
+
+        <div class="posts__bg">
+          <img src="images/iso-5.jpg" alt="background-img">
+        </div>
+        
+        <div class="container">
+          <h3 class="posts__title">Mountain Collections</h3>
+          <div class="posts__desc">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Voluptatibus dolorem sit animi praesentium deserunt explicabo rerum autem soluta nam quae.</div>
+
+          <div class="posts__list">
+
+            <div class="posts__item">
+              <div class="posts__item-aside">
+                <div class="posts__item-title">
+                  <a href="#">Southern Mountain</a>
+                </div>
+                <div class="posts__item-subtitle">
+                  South Country
+                </div>
+                <div class="posts__text">
+                  <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Qui, est. Impedit, ex. Ratione ea mollitia voluptatum ipsa. Consectetur facilis, eaque id nam aspernatur eveniet animi quisquam eos magni tenetur eligendi nisi enim, aliquid dolor deserunt adipisci, labore fugiat quam voluptates.</p>
+                  <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Aliquid ipsam tempora harum excepturi ab saepe sunt odit sapiente voluptatem architecto?</p>
+                </div>
+                <a class="button" href="#">Read More</a>
+              </div>
+    
+              <div class="posts__item-img">
+                <img src="images/spots-slider-1.jpg" alt="post-image">
+              </div>
+            </div>
+
+            <div class="posts__item">
+              <div class="posts__item-aside">
+                <div class="posts__item-title">
+                  <a href="#">Norhern Mountain</a>
+                </div>
+                <div class="posts__item-subtitle">
+                  North Country
+                </div>
+                <div class="posts__text">
+                  <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Qui, est. Impedit, ex. Ratione ea mollitia voluptatum ipsa. Consectetur facilis, eaque id nam aspernatur eveniet animi quisquam eos magni tenetur eligendi nisi enim, aliquid dolor deserunt adipisci, labore fugiat quam voluptates.</p>
+                  <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Aliquid ipsam tempora harum excepturi ab saepe sunt odit sapiente voluptatem architecto?</p>
+                </div>
+                <a class="button" href="#">Read More</a>
+              </div>
+    
+              <div class="posts__item-img">
+                <img src="images/spots-slider-2.jpg" alt="post-image">
+              </div>
+            </div>
+
+            <div class="posts__item">
+              <div class="posts__item-aside">
+                <div class="posts__item-title">
+                  <a href="#">Eastern Mountain</a>
+                </div>
+                <div class="posts__item-subtitle">
+                  East Country
+                </div>
+                <div class="posts__text">
+                  <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Qui, est. Impedit, ex. Ratione ea mollitia voluptatum ipsa. Consectetur facilis, eaque id nam aspernatur eveniet animi quisquam eos magni tenetur eligendi nisi enim, aliquid dolor deserunt adipisci, labore fugiat quam voluptates.</p>
+                  <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Aliquid ipsam tempora harum excepturi ab saepe sunt odit sapiente voluptatem architecto?</p>
+                </div>
+                <a class="button" href="#">Read More</a>
+              </div>
+    
+              <div class="posts__item-img">
+                <img src="images/spots-slider-3.jpg" alt="post-image">
+              </div>
+            </div>
+
+          </div>
+          
+        </div>
+      </section>
+
+      <section class="subscribe">
+        <div class="container">
+          <h5 class="subscribe__title">Subscribe to our news letter</h5>
+
+          <form action="#" method="post">
+
+            <div class="subscribe__form">
+              <input class="subscribe__form-input" type="email" name="mail" placeholder="Your Email">
+              <button class="button subscribe__form-button" type="submit">Subscribe</button>
+            </div>
+
+          </form>
+
+        </div>
+      </section>
+      
+    </main>
+
+    <footer class="footer">
+      <div class="container">
+        <div class="footer__wrapper">
+
+          <div class="footer__logo"><a href="#">trppd _</a></div>
+
+          <div class="footer__copy">&copy; 2017-2023</div>
+
+          <div class="footer__social">
+            <a href="#"><i class="icon-instagram"></i></a>
+            <a href="#"><i class="icon-facebook"></i></a>
+            <a href="#"><i class="icon-twitter"></i></a>
+          </div>
+
+        </div>
+      </div>
+    </footer>
+
+  </div>
+
+</body>
+</html>

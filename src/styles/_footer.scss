@@ -1,0 +1,52 @@
+.footer {
+    padding: 30px 0;
+    background-color: $mustard;
+    color: $jaguar;
+
+    &__wrapper {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        gap: 35px;
+
+        @media screen and (max-width: 767px) {
+            flex-direction: column;
+        }
+    }
+
+    &__logo {
+        a {
+            font-weight: bold;
+            color: $jaguar;
+            font-size: rem(32);
+        }
+    }
+
+    &__copy {
+        font-weight: bold;
+        @media screen and (max-width: 767px) {
+            order: 1;
+        }
+    }
+
+    &__social {
+
+        @media screen and (max-width: 767px) {
+            order: 0;
+        }
+
+        a {
+            color: $jaguar;
+            font-size: rem(20);
+            transition: all .25s;
+
+            &:hover {
+                opacity: 0.5;
+            }
+
+            & + a {
+                margin-left: 15px;
+            }
+        }
+    }
+}

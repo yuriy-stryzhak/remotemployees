@@ -1,0 +1,28 @@
+
+//functions
+@function rem($value) {
+    $remValue: ($value / 18) + rem; 
+    @return $remValue;
+}
+
+$index: calc(1vw + 1vh);
+
+// colors
+// names taken from http://www.color-blindness.com/color-name-hue/
+$jaguar: #28272a;
+$white: #fff;
+
+$mustard: #fee251;
+
+// fonts
+$sans-serif: 'Roboto', sans-serif;
+
+$transition-all: all 0.25s;
+
+// global classes
+
+* {
+    &::selection {
+        background: rgba($mustard, .45);
+      }
+}

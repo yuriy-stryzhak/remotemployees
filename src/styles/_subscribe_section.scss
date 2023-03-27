@@ -1,0 +1,65 @@
+.subscribe {
+    padding: 80px 0 160px;
+    background: url(../images/map.png) center no-repeat;
+    background-size: auto 85%;
+
+    @media screen and (max-width: 767px) {
+        padding: 30px 0 60px;
+    }
+
+    &__title {
+        text-align: center;
+        font-weight: bold;
+        font-size: rem(15);
+        margin-bottom: 80px;
+
+        @media screen and (max-width: 767px) {
+            margin-bottom: 40px;
+        }
+    }
+
+    &__form {
+        width: 535px;
+        max-width: 100%;
+        margin: 0 auto;
+        display: flex;
+        align-items: center;
+        gap: 15px;
+
+        @media screen and (max-width: 767px) {
+            flex-direction: column;
+        }
+    }
+
+    &__form-input {
+        border-radius: 30px;
+        height: 40px;
+        padding: 0 20px;
+
+        @media screen and (max-width: 767px) {
+            height: 45px;
+            margin-bottom: 20px;
+        }
+
+        &::placeholder {
+            font-weight: bold;
+            color: $jaguar;
+            transition: all .25s;
+        }
+
+        &:focus {
+            box-shadow: 0 0 15px $mustard;
+
+            &::placeholder {
+                opacity: 0;
+            }
+        }
+    }
+
+    &__form-button {
+
+        @media screen and (max-width: 767px) {
+            width: 100%;
+        }
+    }
+}
